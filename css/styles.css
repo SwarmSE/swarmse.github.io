@@ -1,0 +1,100 @@
+body{
+    background-image: url('/img/ev-in-field.jpg');
+    background-repeat: no-repeat;
+}
+.tinyLogo{
+    height:50px;
+}
+.title{
+  font-family: 'Pathway Gothic One', serif;
+}
+.copy{
+  font-family: 'Cardo', sans-serif;
+    font-size: 18px;
+}
+.bodytext{
+    background-color: rgba(255,255,255,0.6);
+}
+.headOne{
+    font-size: 40px;
+}
+.navLinks{
+    font-size: 24px;
+}
+.floatRight{
+    text-align: right;
+}
+li a{
+    color:black
+}
+.theContainer{
+  margin: 0 auto;
+  text-align:center;
+  /*width:70%;*/
+  background-color:rgba(255,255,255,.2);
+  padding-bottom: 20px;
+}
+.evNews{
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align:left;
+    /*width:70%;*/
+    background-color:rgba(255,255,255,.7);
+    padding-bottom: 20px;
+    
+}
+.newsLink, .newsLink:hover{
+    text-decoration:none;
+    color:black
+}
+.logo{
+  width:60%;
+  max-width:400px;
+}
+.eventHeader{
+  padding: 5px;
+  background-color:grey;
+  color: lightGreen;
+  font-size: 30px;
+}
+.eventHolder{
+  padding: 5px;
+  background-color:grey;
+  color: white;
+  text-align: left;
+  border: 1px solid white;
+}
+.event{  
+  border-top: solid 1px white;
+}
+.eventTitle{
+  font-size: 24px;
+}
+.date{
+  font-size: 30px;
+}
+.mainContent{
+  text-align:left;
+}
+.announcements{
+  padding: 5px 5px 5px 5px;
+  background-image: url('/img/corkboard.jpg');
+  color: black;
+  border: 1px solid white;
+}
+.announceHeader{
+  font-size: 24px;
+}
+.contactHeader{
+  font-size: 24px;
+}
+.chargeMap{
+  width: 100%;
+  height: 400px;
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1200px;
+  }
+}
