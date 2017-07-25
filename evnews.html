@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src='JS/javascript.js'></script>
+        <link href="https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="container-fluid evNews">
+            <div class="row">
+                <div class='col-xs-6'>
+                    <div class="title headOne">EV News feed - Powered by <a href="http://www.insideevs.com" target="_blank">InsideEvs.com</a></div>
+                </div>
+                <div class='col-xs-6'>
+                    <div class="title headOne floatRight"><a href="/index.html">Back to NTEAA Home</a></div>
+                </div>
+            </div>
+            <div id='results'></div>
+            <script src='https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22http://insideevs.com/feed/%22&format=json&diagnostics=false&callback=top_stories'></script>
+        </div>
+    </body>
+</html>
