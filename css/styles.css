@@ -6,32 +6,50 @@ body{
     height:50px;
 }
 .title{
-  font-family: 'Pathway Gothic One', serif;
+  font-family: 'Pathway Gothic One', sans-serif;
 }
 .copy{
-  font-family: 'Cardo', sans-serif;
+  font-family: 'Cardo', serif;
     font-size: 18px;
 }
 .bodytext{
     background-color: rgba(255,255,255,0.6);
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
 }
 .headOne{
     font-size: 40px;
 }
+.headTwo{
+    font-size: 30px;
+}
 .navLinks{
     font-size: 24px;
+    color: #000;
+    background-color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    border: 0px solid;
+    border-radius: 0px;
+    
 }
 .floatRight{
     text-align: right;
 }
+.floatLeft{
+    text-align: left;
+}
 li a{
-    color:black
+    color:black;
+}
+li ul li a{
+    font-size:20px;
 }
 .theContainer{
   margin: 0 auto;
   text-align:center;
   /*width:70%;*/
-  background-color:rgba(255,255,255,.2);
+  background-color:rgba(255,255,255,.7);
+  margin-top: 20px;
   padding-bottom: 20px;
 }
 .evNews{
@@ -92,9 +110,44 @@ li a{
   width: 100%;
   height: 400px;
 }
+.bars{
+    color: #000;
+}
+
+.cardBox{
+  margin: 0 auto;
+  
+  background: linear-gradient(#FFFFFF, #CCCCCC);
+  padding: 10px 10px 10px 10px;
+}
+.card{
+  font-family: 'Archivo Black';
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 10px;
+  max-width: 100%;
+  background: linear-gradient(to bottom right, #FFFFFF, #EEEEEE);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  box-shadow: 1px 4px 10px; 
+}
+.cardText{
+  width: 75%%;
+}
+.cardPic{
+    width:150px;
+    padding-top: 10px
+}
 
 @media (min-width: 1200px) {
   .container-fluid {
     width: 1200px;
   }
+}
+@media (max-width: 768px){
+    body{
+        background-image: none;
+        background-color:aliceblue;
+    }
 }
