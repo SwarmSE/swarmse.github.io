@@ -19,8 +19,15 @@
                     <div class="title headOne floatRight"><a href="/index.html">Back to NTEAA Home</a></div>
                 </div>
             </div>
-            <div id='results'></div>
-            <script src='https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22http://insideevs.com/feed/%22&format=json&diagnostics=false&callback=top_stories'></script>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id='results'></div>
+                    <script src='https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22http://insideevs.com/feed/%22&format=json&diagnostics=false&callback=top_stories'></script>
+                </div>
+                <div class="col-md-6">
+                <a class="twitter-timeline" data-lang="en" data-theme="light" href="https://twitter.com/evobsession">Tweets by evobsession</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
         </div>
     </body>
 </html>
