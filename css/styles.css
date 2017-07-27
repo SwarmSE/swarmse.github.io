@@ -38,6 +38,9 @@ body{
 .floatLeft{
     text-align: left;
 }
+.imgFloatRight{
+    float: right;    
+}
 li a{
     color:black;
 }
@@ -55,7 +58,7 @@ li ul li a{
 .evNews{
     margin: 0 auto;
     margin-top: 20px;
-    text-align:left;
+    text-align:center;
     /*width:70%;*/
     background-color:rgba(255,255,255,.7);
     padding-bottom: 20px;
@@ -71,25 +74,30 @@ li ul li a{
 }
 .eventHeader{
   padding: 5px;
-  background-color:grey;
-  color: lightGreen;
+  color: #BB0000;
   font-size: 30px;
 }
 .eventHolder{
-  padding: 5px;
-  background-color:grey;
-  color: white;
+  background-color:white;
+  color: #000;
   text-align: left;
-  border: 1px solid white;
+  border: 1px solid black;
+  margin: 0px 0px 20px 0px;
+  padding: 2px;
 }
 .event{  
-  border-top: solid 1px white;
+  border-top: solid 1px black;
+    padding: 6
 }
 .eventTitle{
   font-size: 24px;
 }
+.eventTime{
+    font-size: 20px;
+}
 .date{
   font-size: 30px;
+    color: #BB0000;
 }
 .mainContent{
   text-align:left;
@@ -99,6 +107,7 @@ li ul li a{
   background-image: url('/img/corkboard.jpg');
   color: black;
   border: 1px solid white;
+  margin: 0px 0px 20px 0px
 }
 .announceHeader{
   font-size: 24px;
@@ -114,40 +123,77 @@ li ul li a{
     color: #000;
 }
 
-.cardBox{
+/*.cardBox{
   margin: 0 auto;
   
   background: linear-gradient(#FFFFFF, #CCCCCC);
   padding: 10px 10px 10px 10px;
-}
+
+}*/
+
 .card{
-  font-family: 'Archivo Black';
+  
   border: 1px solid grey;
   border-radius: 5px;
   margin: 10px;
   max-width: 100%;
-  background: linear-gradient(to bottom right, #FFFFFF, #EEEEEE);
+  background: linear-gradient(to bottom right, #FFF, #CDC);
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 15px;
   box-shadow: 1px 4px 10px; 
 }
 .cardText{
-  width: 75%%;
+  padding-left: 80;
+    font-family: 'Cardo', serif;
+    font-size: 18px;
 }
 .cardPic{
     width:150px;
     padding-top: 10px
 }
+.footer{
+    text-align: center;
+    height: 50px;
+    
+}
+.fbBlue{
+    color: #3b5998;
+}
+.twitterBlue{
+    color: #1DA1F2;    
+}
+.linkedinBlue{
+    color: #0077b5;
+}
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .container-fluid {
-    width: 1200px;
+    width: 992px;
   }
 }
 @media (max-width: 768px){
     body{
         background-image: none;
-        background-color:aliceblue;
     }
+    .cardText{
+        padding-left: 15px;
+    }
+    .tinyLogo{
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 992px){
+    .imgFloatRight{
+        float: none;
+    }
+    .floatRight{
+        text-align:left;
+    }
+    .tinyLogo{
+        height: 30px;
+        margin-top: 10px;
+        
+    }
+    
 }
