@@ -12,19 +12,17 @@
     <body>
         <div class="container-fluid evNews">
             <div class="row">
-                <div class='col-xs-6'>
-                    <div class="title headOne">EV News feed - Powered by <a href="http://www.insideevs.com" target="_blank">InsideEvs.com</a></div>
+                <div class='col-xs-12'>
+                    <div class="title headOne">EV News feed</div>
                 </div>
-                <div class='col-xs-6'>
-                    <div class="title headOne floatRight"><a href="/index.html">Back to NTEAA Home</a></div>
-                </div>
+                
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-8 floatLeft copy">
                     <div id='results'></div>
                     <script src='https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%22http://insideevs.com/feed/%22&format=json&diagnostics=false&callback=top_stories'></script>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                 <a class="twitter-timeline" data-lang="en" data-theme="light" href="https://twitter.com/evobsession">Tweets by evobsession</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </div>
