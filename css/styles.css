@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
 body{
     background-image: url('/img/ev-in-field.jpg');
     background-repeat: no-repeat;
+}
+ul li a{
+    color: royalblue
+}
+a div{
+    color: black;
+}
+
+a div:hover{
+    text-decoration: none;
+    color: black;
 }
 .tinyLogo{
     height:50px;
@@ -9,8 +21,9 @@ body{
   font-family: 'Pathway Gothic One', sans-serif;
 }
 .copy{
-  font-family: 'Cardo', serif;
+  font-family: 'Droid Serif', serif;
     font-size: 18px;
+    text-decoration: none;
 }
 .bodytext{
     background-color: rgba(255,255,255,0.6);
@@ -30,8 +43,8 @@ body{
     text-decoration: none;
     border: 0px solid;
     border-radius: 0px;
-    
 }
+
 .floatRight{
     text-align: right;
 }
@@ -40,6 +53,11 @@ body{
 }
 .imgFloatRight{
     float: right;    
+}
+.imgFloatLeft{
+    float:left;
+    margin-right: 10px;
+   
 }
 li a{
     color:black;
@@ -145,13 +163,14 @@ li ul li a{
 }
 .cardText{
   padding-left: 80;
-    font-family: 'Cardo', serif;
+    font-family: 'Droid Serif', serif;
     font-size: 18px;
 }
 .cardPic{
     width:150px;
     padding-top: 10px
 }
+
 .footer{
     text-align: center;
     height: 50px;
@@ -196,4 +215,31 @@ li ul li a{
         
     }
     
+}
+/* Photo gallery stuff */
+#photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   margin-right: 15px;
+   -webkit-column-count: 2;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    2;
+   -moz-column-gap:      0px;
+   column-count:         2;
+   column-gap:           0px;
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  
+}
+
+@media (max-width: 992px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
 }
